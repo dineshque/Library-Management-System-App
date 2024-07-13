@@ -6,7 +6,7 @@ Users can request all books present in the library, read them within requested d
 search for specific ones using a search bar. 
 
 ## Technologies used
-1.Technologies used: Frontend: HTML, CSS, Vue.js, Bootstrap
-2.Backend: Flask, Flask_SQLAlchemy, Flask_flask_restful, flask_security
+  - Technologies used: Frontend: HTML, CSS, Vue.js, Bootstrap
+  - Backend: Flask, Flask_SQLAlchemy, Flask_flask_restful, flask_security
 
 A Demo Video is Here :- https://drive.google.com/file/d/1wEpNN9uWH3_3MsdyfzmeiHCj1hpicp3w/view
