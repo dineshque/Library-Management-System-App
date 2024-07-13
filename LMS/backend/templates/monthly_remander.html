@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th, td {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <p>Dear {{username}},</p>
+    <h3>  Your Monthly Report </h3>
+    <table>
+        <tr>
+          <th>Book Name</th>
+          <th>Issued Date</th>
+          <th>Rating Given</th>
+        </tr>
+        {% for index in range(data['book_name']|length) %}
+        <tr>
+            <td>{{ data['book_name'][index] }}</td>
+            <td>{{ data['issued_date'][index].strftime('%d-%m-%Y') }}</td>
+            <td>{{ data['book_ratings'][index] }}</td>
+        </tr>
+        {% endfor %}
+      </table>
+    
+</body>
+
+</html>
